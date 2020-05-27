@@ -2,8 +2,12 @@
 
 ## Chapter XX. Things they did not teach at University
 
-1. Parallel Processing with Apache Spark
-* This is technically in the domain of Big Data Analytics, not purely ML
+### (To-write) **Environment, Framework & Engine**
+### (To-write) **AWS / AWS Sagemaker**
+### (To-learn) **Docker (deploying)**
+
+### 1. **Parallel Processing with Apache Spark**
+* This is technically in the domain of Big Data Analytics, not ML
 * Hadoop is the framework; Spark is the engine
 * PySpark is the Python API for Spark
 * **Installation (as of May 2020) tutorial**: https://medium.com/@naomi.fridman/install-pyspark-to-run-on-jupyter-notebook-on-windows-4ec2009de21f 

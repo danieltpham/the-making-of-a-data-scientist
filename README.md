@@ -12,7 +12,6 @@
    * Don't download the most up-to-date version of Java, download the **Java 8** from the link in the article - note that you need to sign up an Oracle account for this 
    * Download & install **7.ZIP** in order to extract the .gz file from Apache Spark
   * *Note: You can simply just install the Anaconda package PySpark, but we would like to learn how to set up a standalone Spark cluster so that we can do a lot more with deployment later (i.e. not dependent on Anaconda). Therefore this method, albeit more complicated steps, is preferred.*
- * **Parquet format**: Parquet stores binary data in a column-oriented way. Most data stored on S3 are in parquet format. Pandas DF can be converted into parquet format with the method `.to_parquet()`
- ![](https://image.slidesharecdn.com/parquet-format-140902013813-phpapp02/95/inside-parquet-format-4-638.jpg?cb=1409622133)
+ * **[Parquet format](https://image.slidesharecdn.com/parquet-format-140902013813-phpapp02/95/inside-parquet-format-4-638.jpg?cb=1409622133)**: Parquet stores binary data in a column-oriented way. Most data stored on S3 are in parquet format. Pandas DF can be converted into parquet format with the method `.to_parquet()`
   
 

@@ -10,7 +10,7 @@
 * This is technically in the domain of Big Data Analytics, not ML
 * Hadoop is the framework; Spark is the engine
 * PySpark is the Python API for Spark
-* **Installation (as of May 2020) tutorial**: https://medium.com/@naomi.fridman/install-pyspark-to-run-on-jupyter-notebook-on-windows-4ec2009de21f 
+* **[Installation (as of May 2020) tutorial](https://medium.com/@naomi.fridman/install-pyspark-to-run-on-jupyter-notebook-on-windows-4ec2009de21f)** 
   * *3 things in the guide that beginners may want to Google cause it's a bit vague:*
    * Change system PATH & ENV 
    * Don't download the most up-to-date version of Java, download the **Java 8** from the link in the article - note that you need to sign up an Oracle account for this 
@@ -22,7 +22,7 @@
    * Transform train/test set into RDD / parquet format with `.to_parquet()` or `.parallelize(numSlices)`
    * Instantiate & compile a Keras model
    * Use **Elephas** or **SparkDL** to convert Keras model to a Pipeline usable by Spark
-   * Fit & Train the model
+   * Fit & Train the model (*Note: For classical ML, use `spark.ml` models instead of `scikitlearn` models. For DL, you have to train a model in `keras` first & load it onto `pyspark`*)
    * Get prediction with SparkSQL commands `.select(label)`
    * Close the PySpark session
   

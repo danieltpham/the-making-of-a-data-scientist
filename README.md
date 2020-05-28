@@ -6,7 +6,7 @@
 ### (To-write) **AWS / AWS Sagemaker**
 ### (To-learn) **Docker (deploying)**
 
-### 1. **Parallel Processing with Apache Spark**
+### 1. **Parallel Processing with Apache Spark `PySpark`**
 * This is technically in the domain of Big Data Analytics, not ML
 * Hadoop is the framework; Spark is the engine
 * PySpark is the Python API for Spark

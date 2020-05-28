@@ -17,12 +17,13 @@
    * Download & install **7.ZIP** in order to extract the .gz file from Apache Spark
   * *Note: You can simply just install the Anaconda package PySpark, but we would like to learn how to set up a standalone Spark cluster so that we can do a lot more with deployment later (i.e. not dependent on Anaconda). Therefore this method, albeit more complicated steps, is preferred.*
  * **[Parquet format](https://image.slidesharecdn.com/parquet-format-140902013813-phpapp02/95/inside-parquet-format-4-638.jpg?cb=1409622133)**: Parquet stores binary data in a column-oriented way. Most data stored on S3 are in parquet format. Pandas DF can be converted into parquet format with the method `.to_parquet()`
- * **Steps in using Keras with PySpark in Jupyter Notebook:**
-  * Open a PySpark session
-  * Transform train/test set into RDD / parquet format with `.to_parquet()` or `.parallelize(numSlices)`
-  * Instantiate & compile a Keras model
-  * Use **Elephas** or **SparkDL** to convert Keras model to a Pipeline usable by Spark
-  * Fit & Train the model
-  * Get prediction with SparkSQL commands `.select(label)`
+ * **[Steps in using Keras with PySpark in Jupyter Notebook:](https://github.com/danieltpham/the-making-of-a-data-scientist/blob/master/helloSpark.ipynb)**
+   * Open a PySpark session
+   * Transform train/test set into RDD / parquet format with `.to_parquet()` or `.parallelize(numSlices)`
+   * Instantiate & compile a Keras model
+   * Use **Elephas** or **SparkDL** to convert Keras model to a Pipeline usable by Spark
+   * Fit & Train the model
+   * Get prediction with SparkSQL commands `.select(label)`
+   * Close the PySpark session
   
 

@@ -26,4 +26,16 @@
    * Get prediction with SparkSQL commands `.select(label)`
    * Close the PySpark session
   
-
+### 2. GAN [(Project `Hello GAN`)](https://github.com/danieltpham/the-making-of-a-data-scientist/blob/master/helloGAN/helloGAN.ipynb)
+* GAN is a combined model of 2 networks: generator & discriminator. GAN helps to generate images.
+* **[Steps in creating a GAN model in Keras:]**(https://towardsdatascience.com/writing-your-first-generative-adversarial-network-with-keras-2d16fd8d4889)
+  * Create a class with `__init__` function, and two attributes: `gan.discriminator()` and `gan.generator()`, created by build functions
+  * Combine the two attributes as one with `Model(z, validity)`
+  * Define the two build functions, which are 2 `Sequential()` models
+  * Define the train function as follows:
+   * Generate image from random noise data
+   * Calculate loss with the discriminator
+   * Update and save the weights for the generator & recombine
+   * After `n` epoches, output a test image & save
+  * Instantiate a `GAN()` object, and call the `train` function
+  

@@ -33,9 +33,9 @@
   * Combine the two attributes as one with `Model(z, validity)`
   * Define the two build functions, which are 2 `Sequential()` models
   * Define the train function as follows:
-   * Generate image from random noise data
-   * Calculate loss with the discriminator
-   * Update and save the weights for the generator & recombine
-   * After `n` epoches, output a test image & save
+    * Generate image from random noise data
+    * Calculate loss with the discriminator
+    * Update and save the weights for the generator & recombine
+    * After `n` epoches, output a test image & save
   * Instantiate a `GAN()` object, and call the `train` function
   
